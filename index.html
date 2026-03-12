@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>Arrow Connect4</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Arrow Connect4</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<div id="game">
+    <div id="top-ui">
+        <div id="turn-display">
+            手番表示
+        </div>
+
+        <div id="arrow-panel">
+
+            <button data-dir="nw">↖</button>
+            <button data-dir="n">↑</button>
+            <button data-dir="ne">↗</button>
+
+            <button data-dir="w">←</button>
+            <button data-dir="center">●</button>
+            <button data-dir="e">→</button>
+
+            <button data-dir="sw">↙</button>
+            <button data-dir="s">↓</button>
+            <button data-dir="se">↘</button>
+
+        </div>
+
+    </div>
+
+    <div id="board"></div>
+
+    <div id="controls">
+        <button id="undo">戻る</button>
+        <button id="redo">進む</button>
+        <button id="reset">リセット</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
